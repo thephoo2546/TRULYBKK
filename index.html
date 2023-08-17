@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRULY BKK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap" rel="stylesheet">
+    <link rel="icon" type="jpg" href="imgs/trulylogo.jpg">
+
+
+</head>
+<body>
+  <form action="">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/truky.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/truky.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/truky.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <div class="container">
+        <div class="product-grid">
+            <div class="product-items" data-price="555">
+                <img src="imgs/fed sh.jpg" alt="">
+                <p><b>FEDFE X TRULY The Last Shutter</b></p>
+                <p>วัสดุ : คอตตอน 100%</p>
+                <p>ไซส์ : ฟรีไซส์</p>
+                <p><b>Price :</b> 555 <b>Bath</b></p>
+                <div class="quantity-control d-flex">
+                  <button class="btn btn-primary-red" onclick="increaseQuantity('product1-quantity'); updateOrderList();return false;">+</button>
+                  <p><span id="product1-quantity">0</span> ชิ้น</p>
+                  <button class="btn btn-primary-black" onclick="decreaseQuantity('product1-quantity'); updateOrderList();return false;">-</button>
+              </div>
+
+            </div>
+
+            <div class="product-items" data-price="555">
+                <img src="imgs/cantryy.jpg" alt="">
+                <p><b>แก้ว KEEP IT COOL</b></p>
+                <p>แก้ว tumbler เก็บความเย็นเป็นเลิศ สแตนเลส2ชั้น 
+                  เก็บความเย็น 8-12 ชม ไร้สนิมบาดปาก ไม่มีไอน้ำระเหยรอบแก้วมือไม่เปียกจ้า ทนทาน มาตรฐานสากล 
+                  พกไปไหนก็สะดวก
+                  </p>
+                  <p><b>Price :</b> 555 <b>Bath</b></p>
+                  <div class="quantity-control d-flex">
+                  <button class="btn btn-primary-red" onclick="increaseQuantity('product2-quantity');updateOrderList();return false;">+</button>
+                  <p><span id="product2-quantity">0</span> ชิ้น</p>
+                  <button class="btn btn-primary-black" onclick="decreaseQuantity('product2-quantity'); updateOrderList();return false;">-</button>
+                </div>
+            </div>
+
+            <div class="product-items" data-price="450">
+                <img src="imgs/tt (1).jpg" alt="">
+                <p><b>ถุงเท้า แบงค็อก (แพ็ค3)</b></p>
+                <p>วัสดุ : คอตตอน 80%, สแปนเด็กซ์ 15%, อีลาสติก 5%</p>
+                <p>ไซส์ : Free Size</p>
+                <p>ความยาว : หุ้มข้อเท้า</p>
+                <p><b>Price :</b> 450 <b>Bath</b></p>
+                <div class="quantity-control d-flex">
+                  <button class="btn btn-primary-red" onclick="increaseQuantity('product3-quantity'); updateOrderList();return false;">+</button>
+                  <p><span id="product3-quantity">0</span> ชิ้น</p>
+                  <button class="btn btn-primary-black" onclick="decreaseQuantity('product3-quantity'); updateOrderList();return false;">-</button>
+                </div>
+            </div>
+
+            <div class="product-items" data-price="1234">
+                <img src="imgs/bp (1).jpg" alt="">
+                <p><b>กระเป๋า รุ่น ละ (LEAVE)</b></p>
+                <p>คุณสมบัติสินค้า
+                  ขนาด 13*19cm ด้านข้าง กว้าง 4cm
+                  fabric: prada polyester waterproof
+                  ด้านข้างไม่มีซับ ด้านหลังซับโฟม 6 มม กันกระแทก
+                  สายสะพายยาว 24" (ยาวเต็มเส้น 48")</p>
+                  <p><b>Price :</b> 1,234 <b>Bath</b></p>
+                  <div class="quantity-control d-flex">
+                    <button class="btn btn-primary-red" onclick="increaseQuantity('product4-quantity'); updateOrderList();return false;">+</button>
+                    <p><span id="product4-quantity">0</span> ชิ้น</p>
+                    <button class="btn btn-primary-black" onclick="decreaseQuantity('product4-quantity'); updateOrderList();return false;">-</button>
+                  </div>
+            </div>
+
+        </div>
+      </div>
+      
+
+
+      <footer id="myFooter">
+        <div class="button-with-image">
+        <img src="imgs/Shopping.png" alt="รูปภาพตัวอย่าง">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          ตรวจสอบรายการคำสั่งซื้อ
+        </button>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"><b>ตรวจสอบรายการคำสั่งซื้อ</b></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+      
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">ชื่อ-นามสกุล</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+      
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label-ad">ที่อยู่</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+
+
+
+                
+                <h2>รายการสินค้า</h2>
+                <div id="order-list">                 
+                </div>
+
+                <p class="discount-amount">ส่วนลด: <span id="discount-amount">0</span> Bath</p>
+                <p class="total-price">ราคารวม: <span id="total-price">0</span> Bath </p>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-save" data-bs-dismiss="modal" onclick="updateOrderList(); submitOrder();">ยืนยัน</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </footer>
+    </form>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
